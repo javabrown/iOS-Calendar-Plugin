@@ -61,6 +61,7 @@ Copy jBrownCalendar.h and jBrownCalendar.m to platforms/ios/<ProjectName>/Plugin
 
 Basic operations, you'll want to copy-paste this for testing purposes:
 
+
   // prep some variables
   var startDate = new Date(2015,11,25,18,10,0,0,0); // beware: month 0 = january, 11 = december
   
