@@ -13,7 +13,7 @@
       <engine name="cordova" version=">=1.0.0" />
    </engines>
 
-   <js-module src="www/Calendar.js" name="Calendar">
+   <js-module src="www/jBrownJS.js" name="Calendar">
       <clobbers target="Calendar" />
    </js-module>
 
@@ -24,8 +24,8 @@
             <param name="ios-package" value="Calendar" />
          </feature>
       </config-file>
-      <header-file src="src/ios/Calendar.h" />
-      <source-file src="src/ios/Calendar.m" />
+      <header-file src="src/ios/JBrownCalendar.h" />
+      <source-file src="src/ios/JBrownCalendar.m" />
       <framework src="EventKit.framework" />
       <framework src="EventKitUI.framework" />
    </platform>
