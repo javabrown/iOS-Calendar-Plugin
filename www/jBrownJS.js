@@ -1,4 +1,4 @@
-var jBrown = {
+var jBrownJS = {
 
     createEventWithCalendar: function (title, location, notes, startDate,
                                        endDate, options, successCallback, errorCallback) {
