@@ -3,7 +3,8 @@ iOSPlugins
 PhoneGap Calendar plugin
 for iOS, by Raja Khan
 
-Marketplace logo	For a quick demo app and easy code samples, check out the plugin page: http://www.javabrown.com/blog/objective-c/plugin/calendar
+For a quick demo app and easy code samples, check out the plugin page: http://www.javabrown.com/blog/objective-c/
+
 Description
 Installation
 Automatically (CLI / Plugman)
@@ -23,7 +24,7 @@ iOS specifics
 
 Supported methods: find, create, modify, delete, ..
 All methods work without showing the native calendar. Your app never looses control.
-Tested on iOS 6, 7, 8 and 9.
+Tested on iOS 6, 7 and 8.
 
 2. Installation
 
@@ -62,17 +63,20 @@ Copy jBrownCalendar.h and jBrownCalendar.m to platforms/ios/<ProjectName>/Plugin
 Basic operations, you'll want to copy-paste this for testing purposes:
 
 
-  // prep some variables
-  var startDate = new Date(2015,11,25,18,10,0,0,0); // beware: month 0 = january, 11 = december
+    var startDate = new Date(2015,11,25,18,10,0,0,0); // beware: month 0 = january, 11 = december
+    var endDate = new Date(2015,11,25,19,40,0,0,0);
+    var title = "Trip from White Plains to Chicago";
   
-  var endDate = new Date(2015,11,25,19,40,0,0,0);
+    var location = "Grand Central";
+    var notes = "Your COACH:c10A, Seat: 15A. Please carry your ID card";
+
+    var success = function(message) { alert("Success: " + JSON.stringify(message)); };
+    var error = function(message) { alert("Error: " + message); };
   
-  var title = "Trip from White Plains to Chicago";
-  
-  var location = "Grand Central";
-  
-  var notes = "Your COACH:c10A, Seat: 15A. Please carry your ID card";
-  
-  var success = function(message) { alert("Success: " + JSON.stringify(message)); };
-  
-  var error = function(message) { alert("Error: " + message); };
+    var calOptions = {}; // grab the defaults
+    calOptions.firstReminderMinutes = 60; // default is 60, pass in null for no reminder
+    calOptions.secondReminderMinutes = 30;
+    calOptions.thirdReminderMinutes = 15;
+                
+    brownJS.createEventWithCalendar(title,location,notes,startDate,endDate,calOptions, success,error);
+                
