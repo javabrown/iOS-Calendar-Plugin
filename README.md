@@ -32,13 +32,13 @@ Automatically (CLI / Plugman)
 
 Calendar is compatible with Cordova Plugman and ready for the PhoneGap 3.0 CLI, here's how it works with the CLI:
 
-$ phonegap local plugin add https://github.com/javabrown/iOSPlugins.git
+    $ phonegap local plugin add https://github.com/javabrown/iOSPlugins.git
 or
 
-$ cordova plugin add https://github.com/javabrown/iOSPlugins.git
+    $ cordova plugin add https://github.com/javabrown/iOSPlugins.git
 and run this command afterwards:
 
-$ cordova build
+    $ cordova build
 Manually
 
 iOS
@@ -46,12 +46,12 @@ iOS
 1. Add the following xml to your config.xml:
 
 <!-- for iOS -->
-<feature name="Calendar">
-    <param name="ios-package" value="jBrownCalendar" />
-</feature>
+    <feature name="Calendar">
+        <param name="ios-package" value="jBrownCalendar" />
+    </feature>
 2. Grab a copy of Calendar.js, add it to your project and reference it in index.html:
 
-<script type="text/javascript" src="js/jBrownCalendar.js"></script>
+    <script type="text/javascript" src="js/jBrownCalendar.js"></script>
 3. Download the source files for iOS and copy them to your project.
 
 Copy jBrownCalendar.h and jBrownCalendar.m to platforms/ios/<ProjectName>/Plugins
