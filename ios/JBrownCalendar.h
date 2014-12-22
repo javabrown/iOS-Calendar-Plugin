@@ -2,7 +2,7 @@
 #import <Cordova/CDVPlugin.h>
 #import "EventKit/EventKit.h"
 
-@interface iCalendar : CDVPlugin
+@interface JBrownCalendar : CDVPlugin
     @property (nonatomic, retain) EKEventStore *eventStore;
 
     - (void) initEventStoreWithCalendarCapabilities;
