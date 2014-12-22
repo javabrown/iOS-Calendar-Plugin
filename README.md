@@ -78,5 +78,6 @@ Basic operations, you'll want to copy-paste this for testing purposes:
     calOptions.secondReminderMinutes = 30;
     calOptions.thirdReminderMinutes = 15;
                 
-    brownJS.createEventWithCalendar(title,location,notes,startDate,endDate,calOptions, success,error);
+    jBrownJS.createEventWithCalendar(title,location,notes,
+        startDate,endDate,calOptions, success,error);
                 
