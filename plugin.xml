@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin>
+<plugin
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.javabrown.com/phonegap/res/ios"
+    id="jb.x-services.plugins.calendar"
+    version="4.2.8">
 
    <name>Calendar</name>
 
@@ -17,7 +21,6 @@
       <clobbers target="Calendar" />
    </js-module>
 
-  <!-- ios -->
    <platform name="ios">
       <config-file target="config.xml" parent="/*">
          <feature name="Calendar">
@@ -30,7 +33,4 @@
       <framework src="EventKitUI.framework" />
    </platform>
    
-   <!-- android -->
-   <platform name="android">
-   </platform>
 </plugin>
