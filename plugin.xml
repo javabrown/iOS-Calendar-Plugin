@@ -2,7 +2,7 @@
 <plugin
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.javabrown.com/phonegap/res/ios"
-    id="jb.x-services.plugins.calendar"
+    id="rk.javabrown.plugins.calendar"
     version="4.2.8">
 
    <name>Calendar</name>
