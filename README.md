@@ -1,5 +1,5 @@
-iOSPlugins
-==========
+iOS Calendar Plugins
+====================
 PhoneGap Calendar plugin
 for iOS, by Raja Khan
 
